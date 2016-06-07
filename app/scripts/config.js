@@ -89,6 +89,17 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 }
             }
         })
+        .state('myproject.dashboard',{
+            url: "/dashboard",
+            views: {
+                " ": {
+                    templateUrl: "views/partials/dashboard.html"
+                },
+                "loginuser@" : {
+                    templateUrl: "views/partials/dashboard.html"
+                }
+            }
+        })
         .state('myproject.login',{
             url: "/sign-in",
             views: {
