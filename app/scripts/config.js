@@ -97,6 +97,10 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 },
                 "loginuser@" : {
                     templateUrl: "views/partials/dashboard.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
                 }
             }
         })
