@@ -1,1 +1,1 @@
-This project is created by navjot
+This project is created by Olga Yegorova and Suryakant Pandey
