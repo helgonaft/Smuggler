@@ -119,6 +119,36 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 }
             }
         })
+        .state('myproject.rewardAndBenefits',{
+            url: "/rewardAndBenefits",
+            views: {
+                " ": {
+                    templateUrl: "views/partials/dashboard/rewardAndBenefits.html"
+                },
+                "loginuser@" : {
+                    templateUrl: "views/partials/dashboard/rewardAndBenefits.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+         .state('myproject.messages',{
+            url: "/messages",
+            views: {
+                " ": {
+                    templateUrl: "views/partials/dashboard/messages.html"
+                },
+                "loginuser@" : {
+                    templateUrl: "views/partials/dashboard/messages.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
         .state('myproject.profile',{
             url: "/profile",
             views: {
