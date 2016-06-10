@@ -38,14 +38,14 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/create-account-1",
             views: { 
                 "createAccount@": { 
-                    templateUrl: "views/partials/create-header.html"
+                    templateUrl: "views/partials/registration/create-header.html"
                 },
                 " ": {
 
-                    templateUrl: "views/partials/register-first-step.html"
+                    templateUrl: "views/partials/registration/register-first-step.html"
                 },
                  "loginuser@": { 
-                    templateUrl: "views/partials/register-first-step.html"
+                    templateUrl: "views/partials/registration/register-first-step.html"
                 },
                
                 "footer@": {
@@ -60,11 +60,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
             views: { 
                 " ": {
 
-                    templateUrl: "views/partials/register-second-step.html"
+                    templateUrl: "views/partials/registration/register-second-step.html"
                 },
                  "loginuser@": {
 
-                    templateUrl: "views/partials/register-second-step.html"
+                    templateUrl: "views/partials/registration/register-second-step.html"
                 },
                 "footer@": {
 
@@ -77,11 +77,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
             views: { 
                 " ": {
 
-                    templateUrl: "views/partials/register-third-step.html"
+                    templateUrl: "views/partials/registration/register-third-step.html"
                 },
                  "loginuser@": {
 
-                    templateUrl: "views/partials/register-third-step.html"
+                    templateUrl: "views/partials/registration/register-third-step.html"
                 },
                 "footer@": {
 
@@ -93,10 +93,40 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
             url: "/dashboard",
             views: {
                 " ": {
-                    templateUrl: "views/partials/dashboard.html"
+                    templateUrl: "views/partials/dashboard/dashboard.html"
                 },
                 "loginuser@" : {
-                    templateUrl: "views/partials/dashboard.html"
+                    templateUrl: "views/partials/dashboard/dashboard.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+        .state('myproject.myStay',{
+            url: "/myStay",
+            views: {
+                " ": {
+                    templateUrl: "views/partials/dashboard/myStay.html"
+                },
+                "loginuser@" : {
+                    templateUrl: "views/partials/dashboard/myStay.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+        .state('myproject.profile',{
+            url: "/profile",
+            views: {
+                " ": {
+                    templateUrl: "views/partials/dashboard/profile.html"
+                },
+                "loginuser@" : {
+                    templateUrl: "views/partials/dashboard/profile.html"
                 },
                 "footer@": {
 

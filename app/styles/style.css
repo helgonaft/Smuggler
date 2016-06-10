@@ -506,6 +506,12 @@ a.bg-color:focus {
 .unstyled-list li{
     padding: 5px 0;
 }
+.underlined-link:hover{
+    text-decoration: underline;
+}
+.pointer:hover{
+    cursor: pointer;
+}
 .bottom-menu{ 
     padding: 20px;
 }
