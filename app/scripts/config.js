@@ -26,7 +26,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 },
                 "loginuser@": {
 
-                    templateUrl: 'views/partials/sign-in.html'
+                    templateUrl: 'views/home.html'
                 },
                 "footer@": {
 

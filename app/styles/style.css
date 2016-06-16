@@ -2,6 +2,46 @@
 body {
     font-family: 'Open Sans', 'sans-serif';
 }
+ @media screen and (max-device-width: 769px) {
+    .navbar {
+        position: absolute!important;
+    }
+    .sign_in-header{
+        margin:0;
+    }
+   }
+   @media (min-width: 768px) {
+
+    .navbar-fix .navbar-collapse,
+    .navbar-fix .navbar-collapse,
+    .navbar-fix .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-fix {
+        border-radius: 0;
+    }
+}
+
+.navbar-fix{
+    position: fixed ;
+    top:0;
+    left:0;
+    right:0;
+    border-width:0 0 1px;
+    z-index: 1030;
+    padding:0;
+    border-radius: 0;
+}
+
+@media screen and (max-width: 763px) {
+    .navbar-fix{
+        position:static!important;
+    }
+    .css3-notification{
+        display:none !important;
+    }
+}
 .navbar-nav > li > a { 
     padding-bottom: 15px !important;
     padding-top: 26px !important;
@@ -16,7 +56,8 @@ body {
 }
 .with-divider li{
     border-bottom: 1px solid gray;
-    padding: 15px 15px;
+    padding: 10px;
+    font-size: 16px;
 }
 p{
     white-space: normal;
@@ -509,6 +550,15 @@ a.bg-color:focus {
 .underlined-link:hover{
     text-decoration: underline;
 }
+.profile-block{
+    position: relative;
+    height: 270px;
+    margin-bottom: 20px;
+}
+.profile-block div{
+    position: absolute;
+    bottom: 0;
+}
 .pointer:hover{
     cursor: pointer;
 }
@@ -522,6 +572,30 @@ a.bg-color:focus {
 .text-muted{
     color: #888787!important;
 }
+.search p{
+background-color:black; 
+padding:30px;
+border-bottom:2px solid yellow;
+}
+.search input{
+    background-color: black;
+    color:white; 
+    border:none; 
+    width:98%;
+}
+.search input:hover, .search input:focus{
+   outline: none;
+}
+.block-image{
+     background-position: center;
+      background-size:cover; 
+      position: relative;
+}
+.block-image div{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 .css3-notification {
     font-size: .8em;
     text-align: center;
@@ -533,7 +607,25 @@ a.bg-color:focus {
     -o-animation: bounce 1800ms ease-out;
     animation: bounce 1800ms ease-out;
 }
+/ TOP TO BOTTOM /
+@keyframes myChange{
+    from {
+        padding-bottom: 0;
+    } to {
+          padding-bottom: 10px;
+      }
+}
 
+.animate_to_bottom {
+    padding-bottom: 0;
+}
+
+.animate_to_bottom:hover {
+    animation: 0.5s myChange ease-in-out;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #31A7E6!important;
+    pointer:cusror;
+}
 /* Webkit, Chrome and Safari */
 
 @-webkit-keyframes bounce {
