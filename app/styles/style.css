@@ -197,13 +197,15 @@ h1, h2, h3, h4, h5{
     font-size: 50px;
     line-height: 50px;
 }
+.sign_in-header{
+    background-image: url(../images/background.jpg);
+}
 .wider-header{
     width: 100%;
     padding: 0;
     margin:0;
     height: 300px;
     padding-top:100px;
-    background-image: url(../images/background.jpg);
     background-position: center;
     background-size: cover;
 
@@ -572,6 +574,9 @@ a.bg-color:focus {
 .text-muted{
     color: #888787!important;
 }
+.text-shadow{
+    text-shadow: 2px 2px 2px black;
+}
 .search p{
 background-color:black; 
 padding:30px;
@@ -581,10 +586,30 @@ border-bottom:2px solid yellow;
     background-color: black;
     color:white; 
     border:none; 
-    width:98%;
+    width:90%;
 }
 .search input:hover, .search input:focus{
    outline: none;
+}
+.states a{
+    margin: 0 6px;
+}
+.sub-menu{ 
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-color: #d2d2d2;
+    color: black;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.sub-menu:first-child{
+    background-color: white;
+    border:none;
+}
+.sub-menu:active{
+    background-color: white;
 }
 .block-image{
      background-position: center;

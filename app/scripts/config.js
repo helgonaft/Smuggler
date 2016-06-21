@@ -34,6 +34,23 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 }
             }
         })
+        .state('myproject.sign-in', {
+            url: "/sign-in",
+            views: {
+                " ": {
+
+                    templateUrl: "views/partials/sign-in.html"
+                },
+                "loginuser@": {
+
+                    templateUrl: 'views/partials/sign-in.html'
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
         .state('myproject.create-account-1', {
             url: "/create-account-1",
             views: { 
@@ -174,6 +191,57 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
                 "loginuser@": {
 
                     templateUrl: 'views/partials/sign-in.html'
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+        .state('myproject.hotels-overview',{
+            url: "/hotels-overview",
+            views: {
+                " ": {
+
+                    templateUrl: "views/partials/hotels/hotels-overview.html"
+                },
+                "loginuser@": {
+
+                    templateUrl: "views/partials/hotels/hotels-overview.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+        .state('myproject.hotels-find',{
+            url: "/hotels-find",
+            views: {
+                " ": {
+
+                    templateUrl: "views/partials/hotels/hotels-find.html"
+                },
+                "loginuser@": {
+
+                    templateUrl: "views/partials/hotels/hotels-find.html"
+                },
+                "footer@": {
+
+                    templateUrl: 'views/partials/footer.html'
+                }
+            }
+        })
+        .state('myproject.hotels-newest',{
+            url: "/hotels-newest",
+            views: {
+                " ": {
+
+                    templateUrl: "views/partials/hotels/hotels-newest.html"
+                },
+                "loginuser@": {
+
+                    templateUrl: "views/partials/hotels/hotels-newest.html"
                 },
                 "footer@": {
 
